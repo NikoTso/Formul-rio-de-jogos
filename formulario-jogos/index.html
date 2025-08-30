@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giraform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <main class="container">
+        <header>
+            <h1>Formulário de Inscrição</h1>
+            <p>Preencha seus dados e depois escolha o jogo para o questionário.</p>
+        </header>
+
+        <p class="bemvindo">Olá! está preparado para entrar no mundo dos jogos competitivos?</p>
+
+        <section>
+            <form action="#" method="post" class="forms">
+
+                <div class="preenchemento">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                </div>
+                
+                <div class="preenchemento">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                    placeholder="seuemail@dominio.com" required>
+                    
+                </div>
+                
+                <div class="preenchemento">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Sua senha" required>
+                </div>
+                
+                <div class="preenchemento">
+                    <label for="aniversario">Data de Nascimento</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+            
+                <div class="preenchemento">
+                    <input type="radio" class="input-radio" id="masculino" name="genero" value="M">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" class="input-radio" id="feminino" name="genero" value="F">
+                    <label for="feminino">Feminino</label>
+                </div>
+
+                <div class="preenchemento">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione seu estado</option>
+                        <option value="escolha"></option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espirito Santo</option>
+                        <option value="go">Goias</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="se">Sergipe</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+                
+                <div class="preenchemento">
+                    <p>Escreva uma mensagem</p>
+                    <label for="mensagem"></label><br>
+                    <textarea id="mensagem" rows="4" cols="40"></textarea>
+                </div>
+            </form>
+
+            <hr style="margin: 30px 0; border-color: #444;">
+
+            <h2>Escolha o jogo para o Questionário</h2>
+            <div class="game-selecao-group">
+                <a href="lol.html" class="btn">League of Legends</a> 
+                <a href="valorant.html" class="btn">Valorant</a> 
+                <a href="cs.html" class="btn">Counter-Strike</a> 
+                <a href="stardewvalley.html" class="btn">Stardew Valley</a> 
+                <a href="terraria.html" class="btn">Terraria</a> 
+                <a href="rainbow_six.html" class="btn">Rainbow six</a> 
+            <div>
+        </section>
+    </main>
+    
+</body>
+</html>
