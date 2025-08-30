@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Terraria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="terraria-page">
+    <div class="container">
+        <header>
+            <img src="img/terr.png" alt="terraria" class="logo">
+            <h1>Questionário: Terraria</h1>
+            <p>Responda algumas perguntas sobre suas aventuras neste mundo!</p>
+        </header>
+
+        <form action="#" method="POST">
+            <div class="preenchemento">
+                <label for="character-name">Nome do seu Personagem</label>
+                <input type="text" id="character-name" name="character-name" placeholder="Como seu herói se chama?" required>
+            </div>
+            
+            <div class="preenchemento">
+                <label for="main-class">Qual sua classe/estilo de jogo preferido?</label>
+                <select id="main-class" name="main-class" required>
+                    <option value="" disabled selected>Selecione uma classe</option>
+                    <option value="melee">Guerreiro (Melee)</option>
+                    <option value="ranger">Arqueiro (Ranger)</option>
+                    <option value="mage">Mago (Mage)</option>
+                    <option value="summoner">Invocador (Summoner)</option>
+                </select>
+            </div>
+
+            <div class="preenchemento">
+                <label for="favorite-boss">Qual chefe (boss) você mais gosta de enfrentar?</label>
+                <input type="text" id="favorite-boss" name="favorite-boss" placeholder="Ex: Olho de Cthulhu, Parede de Carne..." required>
+            </div>
+
+            <div class="preenchemento">
+                <label for="message">Qual foi sua maior conquista no jogo até hoje?</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-submit-form">Enviar Respostas</button>
+        </form>
+    </div>
+</body>
+</html>

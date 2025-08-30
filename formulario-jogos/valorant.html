@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Valorant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="valorant-page">
+    
+    <div class="container">
+         <header>
+            <img src="img/valorant.png" alt="valorant" class="logo">
+            <h1>Questionário: Valorant</h1>
+            <p>Responda algumas perguntas sobre o FPS tático</p>
+        </header>
+
+        
+            <form action="#" method="POST">
+                <div class="preenchemento">
+                    <label for="skinV-name">Skin favorita</label>
+                    <input type="text" id="skinV-name" name="skinV-name" placeholder="Ex: sublime" required>
+                </div>
+            
+                <div class="preenchemento">
+                    <label for="funcao-name">Qual função você joga? </label>
+                    <input type="text" id="funcao-name" name="funcao-name" placeholder="Ex: Sentinela, Controlador, Durelista..." required>
+                </div>
+
+                <div class="preenchemento">
+                    <label for="map">Qual é o seu mapa favorito?</label>
+                    <select id="map" name="map" required>
+                        <option value="" disabled selected>Selecione um mapa</option>
+                        <option value="corrode">Corrode</option>
+                        <option value="Sunset">Sunset</option>
+                        <option value="Lotus">Lotus</option>
+                        <option value="Pearl">Pearl</option>
+                        <option value="Fracture">Fracture</option>
+                        <option value="Breeze">Breeze</option>
+                        <option value="Icebox">Icebox</option>
+                        <option value="Ascent">Ascent</option>
+                        <option value="Split">Split</option>
+                        <option value="Haven">Haven</option>
+                        <option value="Bind">Bind</option>
+                    </select>
+                </div>
+
+                <div class="preenchemento">
+                    <label for="message">Qual é a melhor composição na sua opinião? <br></label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+            
+                <button type="submit" class="btn btn-submit-form">Enviar Respostas</button>
+            </form>
+       
+
+    </div>
+    
+</body>
+</html>
